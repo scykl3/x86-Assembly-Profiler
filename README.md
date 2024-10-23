@@ -79,22 +79,22 @@ Top 10 functions Assembly:
 1: __func1__          10320ms      48.63%
 
 Assembly Instructions for function __func1__:
-0x45b840:       f3 0f 1e fa           endbr64                                                                    550ms
-0x45b844:       89 f8                 mov    %edi,%eax                                                           120ms
-0x45b846:       31 d2                 xor    %edx,%edx                                                           190ms
-0x45b848:       62 a1 fd 00 ef c0     vpxorq %xmm16,%xmm16,%xmm16                                                10ms
-0x45b84e:       09 f0                 or     %esi,%eax                                                           0ms
-0x45b850:       25 ff 0f 00 00        and    $0xfff,%eax                                                         530ms
+0x45b840:       f3 0f 1e fa           endbr64                          550ms
+0x45b844:       89 f8                 mov    %edi,%eax                 120ms
+0x45b846:       31 d2                 xor    %edx,%edx                 190ms
+0x45b848:       62 a1 fd 00 ef c0     vpxorq %xmm16,%xmm16,%xmm16      10ms
+0x45b84e:       09 f0                 or     %esi,%eax                 0ms
+0x45b850:       25 ff 0f 00 00        and    $0xfff,%eax               530ms
 ...
 ...
                       
 2: __func2__          3200ms      15.08%
 
 Assembly Instructions for function __func2__:
-0x402f0a:       f3 0f 1e fa           endbr64                                                                    10ms
-0x402f0e:       55                    push   %rbp                                                                10ms
-0x402f0f:       48 89 e5              mov    %rsp,%rbp                                                           0ms
-0x402f12:       48 83 ec 20           sub    $0x20,%rsp                                                          0ms
+0x402f0a:       f3 0f 1e fa           endbr64                          10ms
+0x402f0e:       55                    push   %rbp                      10ms
+0x402f0f:       48 89 e5              mov    %rsp,%rbp                 0ms
+0x402f12:       48 83 ec 20           sub    $0x20,%rsp                0ms
 ...
 ...
 ```
