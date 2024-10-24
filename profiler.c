@@ -112,7 +112,7 @@ void parse_nm_output(const char *prog_name, FuncEntry **funcs, int *func_count) 
 
     while (fscanf(nm_pipe, "%lx %c %255s", &addr, &type, name) == 3) {
         if (type == 'T' || type == 't') {  // text symbols only
-                        if (*func_count >= capacity) {
+            if (*func_count >= capacity) {
                 capacity *= 2;
                 *funcs = realloc(*funcs, capacity * sizeof(FuncEntry));
             }
